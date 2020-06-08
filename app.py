@@ -1,9 +1,9 @@
 from flask import Flask,render_template,url_for,request
 import pickle
 
-filename = 'C:\\Users\\Admin\\Desktop\\Data Science 2020\\NLP\\SMSCollection\\nlp_model.pkl'
+filename = 'nlp_model.pkl'
 clf = pickle.load(open(filename, 'rb'))
-cv=pickle.load(open('C:\\Users\\Admin\\Desktop\\Data Science 2020\\NLP\\SMSCollection\\tranform.pkl','rb'))
+cv=pickle.load(open('tranform.pkl','rb'))
 app = Flask(__name__)
 
 
