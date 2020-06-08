@@ -20,4 +20,5 @@ def predict():
         my_prediction = clf.predict(vect)
     return render_template('result.html',prediction = my_prediction)
 
+if __name__ == '__main__':
 	app.run()
